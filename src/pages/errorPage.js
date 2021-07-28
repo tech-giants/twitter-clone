@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function ErrorPage() {
   return (
@@ -12,18 +13,12 @@ export default function ErrorPage() {
               <p className="mt-1 text-base text-gray-500">Please check the URL in the address bar and try again.</p>
             </div>
             <div className="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 Go back home
-              </a>
-              <a
-                href="/"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              >
-                Contact support
-              </a>
+              </Link>
             </div>
           </div>
         </main>
